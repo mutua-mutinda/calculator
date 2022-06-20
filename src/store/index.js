@@ -16,7 +16,7 @@ export default createStore({
   },
   },
   actions: {
-    //initialize the them
+    //initialize the theme
     initTheme({ commit }) {
 
       const cachedTheme = localStorage.theme ? localStorage.theme : false;
@@ -35,17 +35,15 @@ export default createStore({
   toggleTheme({ commit }) {
 
     switch (localStorage.theme) {
-        case 'light':
-            commit('SET_THEME', 'dark')
-            break;
+      case 'light':
+        commit('SET_THEME', 'dark')
+      break;
 
-        default:
-            commit('SET_THEME', 'light')
-            break;
+      default:
+        commit('SET_THEME', 'light')
+      break;
     }
   }
 
   },
-  modules: {
-  }
 })
