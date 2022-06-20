@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Orbitron', sans-serif;
+    }
+}
+
+@layer components {
+    .button-value {
+        @apply p-5 text-2xl bg-[#F1F3F6] text-gray-800 rounded-2xl shadow-5xl border border-transparent transition-all ease-in-out duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1565C0] focus:shadow-indigo-100 dark:text-gray-200 dark:shadow-6xl dark:bg-[#141518] dark:focus:ring-[#141518] dark:focus:shadow-none
+    }
+
+    .button-ops {
+        @apply p-5 text-2xl bg-[#F1F3F6] text-[#1565C0] border border-[#1565C0] rounded-2xl shadow-5xl outline-none dark:text-gray-200 dark:shadow-6xl dark:bg-[#141518] transition-all ease-in-out duration-75 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1565C0] dark:focus:border-none dark:focus:ring-[#141518]
+    }
+}
