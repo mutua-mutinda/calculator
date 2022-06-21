@@ -3,9 +3,9 @@
       <div class="w-full px-4 py-6 mx-auto max-w-sm bg-[#F1F3F6] dark:bg-dark-gradient">
         <!-- theme toggle container -->
         <div class="flex items-center justify-end">
-          <label class="sr-only" id="headlessui-listbox-label-8">Theme</label>
+          <label class="sr-only">Theme</label>
             <!-- theme toggle button -->
-            <button @click="toggleTheme" type="button" class="rounded-full shadow-3xl bg-[#F1F3F6] dark:shadow-4xl dark:bg-[#141518]" id="headlessui-listbox-button-9" aria-haspopup="true" aria-expanded="false" aria-labelledby="headlessui-listbox-label-8 headlessui-listbox-button-9">
+            <button @click="toggleTheme" type="button" class="rounded-full shadow-3xl bg-[#F1F3F6] dark:shadow-4xl dark:bg-[#141518]">
               <span class="dark:hidden">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8">
                   <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="stroke-[#1565C0]"></path>
@@ -13,12 +13,12 @@
                 </svg>
               </span>
               <!-- dark -->
-                <span class="hidden dark:inline">
-                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8">
-                    <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class=" stroke-white"></path>
-                    <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836" class="stroke-white"></path>
-                  </svg>
-                </span>
+              <span class="hidden dark:inline">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8">
+                  <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class=" stroke-white"></path>
+                  <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836" class="stroke-white"></path>
+                </svg>
+              </span>
             </button>
         </div>
 
@@ -55,7 +55,7 @@
             <button value="+"  @click="add" class="button-ops">+</button>
           </div>
          <div class="mt-4 grid grid-cols-4 gap-x-3">
-            <button value="0"  @click="keyVal('0')" class="col-span-2 p-5 h-20 w-full button-value">0</button>
+            <button value="0"  @click="keyVal('0')" class="col-span-2 button-value">0</button>
             <button value="."  @click="dot" class="button-value">.</button>
             <button value="="  @click="compute" class=" button-ops bg-[#1565C0] shadow-7xl text-gray-200 dark:bg-[#1565C0]">=</button>
           </div>
