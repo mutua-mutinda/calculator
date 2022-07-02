@@ -25,7 +25,7 @@
         <!-- screen -->
         <div class="mt-3 shadow-5xl rounded-2xl w-full p-2 bg-[#F1F3F6] dark:shadow-6xl dark:bg-[#141518]">
           <label for="screen" class="sr-only">calculation</label>
-          <input type="text" name="screen" id="screen" v-model="enteredVal" readonly placeholder="88888888" class="p-8 w-full text-4xl text-right text-gray-700 border-2 border-[#1565C0] rounded-md outline-none dark:text-gray-300 dark:bg-[#202226]" />
+          <input type="text" name="screen" id="screen" v-model="enteredVal" readonly placeholder="88888888" class="p-6 font-digital tracking-wider w-full text-6xl text-right text-gray-700 placeholder:text-gray-400 dark:placeholder:text-gray-300/20 border-2 border-[#1565C0] rounded-md outline-none dark:text-gray-300 dark:bg-[#202226]" />
         </div>
 
         <!-- keypad -->

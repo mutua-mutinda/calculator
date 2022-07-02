@@ -6,6 +6,9 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    fontFamily:{
+      'digital': ['Ds-Digital']
+    },
     extend: {
       boxShadow: {
         '3xl': '-5px -5px 10px #FFFFFF, 5px 5px 10px rgba(55, 84, 170, 0.4)',
